@@ -39,6 +39,8 @@ class Diarista(models.Model):
     max_length=8
   )
 
+  cidade = models.CharField(max_length=120, null=False, blank=True)
+
   estado = models.CharField(max_length=2)
 
   codigo_ibge = models.IntegerField()
